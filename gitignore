@@ -1,0 +1,16 @@
+# Secrets / credentials
+*.env
+.env
+*password*
+*secret*
+certs/
+
+# VM files
+*.vmdk
+*.vmx
+*.ova
+*.ovf
+
+# OS junk
+.DS_Store
+Thumbs.db
