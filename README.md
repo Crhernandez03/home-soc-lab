@@ -57,11 +57,11 @@ end — from raw logs, to SIEM alert, to MITRE ATT&CK technique mapping.
 
 **Dashboard overview** — Wazuh detecting a simulated SSH brute-force attack: 424 total alerts, 368 authentication failures, and MITRE ATT&CK technique breakdown (Password Guessing, SSH, Brute Force).
 
-![Wazuh dashboard overview](docs/wazuh-dashboard-overview.png)
+![Wazuh dashboard overview](docs/wazuh-alert-table.png)
 
 **Alert detail table** — Individual alerts showing technique mapping across the attack, including T1110 (Password Guessing), T1110.001, and T1021.004 (Remote Services / Lateral Movement).
 
-![Wazuh alert table](docs/wazuh-alert-table.png)
+![Wazuh alert table](docs/wazuh-dashboard-overview.png)
 
 ## Status
 
