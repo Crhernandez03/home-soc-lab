@@ -63,11 +63,20 @@ end — from raw logs, to SIEM alert, to MITRE ATT&CK technique mapping.
 
 ![Wazuh alert table](docs/wazuh-dashboard-overview.png)
 
+### Active Response — Automatic Attacker Blocking
+Wazuh detects the SSH brute-force attempt (rule 5763, MITRE T1110) and
+automatically triggers the `host-deny` active response, blocking the
+attacker's IP at the OS level. Confirmed both in the active-response log
+(rule fires → host-deny executes) and in `/etc/hosts.deny`
+(`ALL:192.168.94.130`).
+
+![Active Response Proof](docs/active-response-proof.png)
+
 ## Status
 
 Actively being extended. In progress / planned:
 
-- [ ] Fix Wazuh Active Response (automatic attacker IP blocking) —
+- [x] Fix Wazuh Active Response (automatic attacker IP blocking) —
       currently blocked by a suspected Docker container-to-host
       networking issue
 - [ ] Add a Wazuh agent on the Kali attacker VM
