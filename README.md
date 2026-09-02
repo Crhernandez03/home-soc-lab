@@ -77,8 +77,8 @@ attacker's IP at the OS level. Confirmed both in the active-response log
 Actively being extended. In progress / planned:
 
 - [x] Fix Wazuh Active Response (automatic attacker IP blocking) —
-      currently blocked by a suspected Docker container-to-host
-      networking issue
+      fixed and verified: manager config was missing the active-response
+      block, and a file-ownership mismatch was silently breaking wazuh-db
 - [ ] Add a Wazuh agent on the Kali attacker VM
 - [ ] Explore the MITRE ATT&CK dashboard module further
 - [ ] Stand up a Metasploitable target VM
