@@ -72,6 +72,15 @@ attacker's IP at the OS level. Confirmed both in the active-response log
 
 ![Active Response Proof](docs/active-response-proof.png)
 
+### Kali Attacker VM as a Monitored Agent
+
+The Kali attacker VM now runs its own Wazuh agent, in addition to acting as
+the attack source. This gives visibility into both sides of the simulations
+— attacker-side activity and defender-side detections — not just the
+defender host.
+
+![Wazuh Agents List](docs/kali-agent-registered.png)
+
 ## Status
 
 Actively being extended. In progress / planned:
@@ -79,7 +88,7 @@ Actively being extended. In progress / planned:
 - [x] Fix Wazuh Active Response (automatic attacker IP blocking) —
       fixed and verified: manager config was missing the active-response
       block, and a file-ownership mismatch was silently breaking wazuh-db
-- [ ] Add a Wazuh agent on the Kali attacker VM
+- [x] Add a Wazuh agent on the Kali attacker VM — installed, registered against the manager, confirmed active in the dashboard (100% agent coverage)
 - [ ] Explore the MITRE ATT&CK dashboard module further
 - [ ] Stand up a Metasploitable target VM
 - [ ] Run additional attack scenarios: privilege escalation, lateral
