@@ -27,7 +27,6 @@ host to generate real attack traffic and practice detecting it end to
 end — from raw logs, to SIEM alert, to MITRE ATT&CK technique mapping.
 
 
-Architecture section · TXT
 ## Architecture
  
 ```
@@ -46,9 +45,6 @@ Architecture section · TXT
         Remote access: Tailscale (SSH + Wazuh dashboard from any device)
 ```
  
-Host: Ryzen 7 5800X / RTX 5070 / 32GB DDR4
-Remote access: Tailscale (SSH + Wazuh dashboard from any device)
-
 ## What it does
 
 - **Detection & alerting** — Wazuh ingests logs from both the defender
