@@ -125,6 +125,18 @@ defender host.
 
 [![Wazuh Agents List](https://github.com/Crhernandez03/home-soc-lab/raw/main/docs/kali-agent-registered.png)](/Crhernandez03/home-soc-lab/blob/main/docs/kali-agent-registered.png)
 
+### Network-Layer Detection (Suricata NIDS)
+
+A live nmap scan against the defender host initially produced **zero** Wazuh
+alerts — the lab's Wazuh agent only watches log files (HIDS), and a port scan
+never touches a log. Added Suricata as a network-layer IDS (NIDS) to close
+the gap. The same scan, re-run after integration, is now detected and flows
+into the Wazuh dashboard as live alerts (rule ID 86601).
+
+Full write-up: [`docs/suricata-integration.md`](docs/suricata-integration.md)
+
+![Suricata NIDS Detection](https://github.com/Crhernandez03/home-soc-lab/raw/main/docs/suricata-nids-detection.png)
+
 ## Status
 
 ### Completed
