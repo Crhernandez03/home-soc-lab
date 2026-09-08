@@ -138,6 +138,10 @@ defender host.
 - [x] Add a Wazuh agent on the Kali attacker VM — installed, registered
       against the manager, confirmed active in the dashboard (100% agent coverage)
 - [x] Set up remote access via Tailscale (SSH + Wazuh dashboard from any device)
+- [x] Add Suricata as a network-layer IDS (NIDS) on the defender host — closed a
+      detection gap where port scans produced zero Wazuh alerts under host-based-only
+      monitoring; integrated via `<localfile>` JSON ingestion, verified alerts flowing
+      into Wazuh for a repeat nmap scan (see `docs/suricata-integration.md`)
 
 ### Planned
 
