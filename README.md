@@ -26,21 +26,26 @@ This lab pairs a monitored "defender" host with an isolated "attacker"
 host to generate real attack traffic and practice detecting it end to
 end — from raw logs, to SIEM alert, to MITRE ATT&CK technique mapping.
 
-## Architecture
-+-----------------------------+ +-----------------------------+
-| Ubuntu Server 24.04 LTS | | Kali Linux 2026.1 |
-| (Defender) | | (Attacker) |
-| | | |
-| Docker + Portainer CE |<------>| Nmap recon scans |
-| Wazuh Manager / Indexer / | NAT | Hydra SSH brute-force |
-| Dashboard |network | attempts |
-| Wazuh Agent (host) | | Wazuh Agent (host) |
-| Suricata (NIDS) | | |
-+-----------------------------+ +-----------------------------+
-Hypervisor: VMware Workstation Pro
-Host: Ryzen 7 5800X / RTX 5070 / 32GB DDR4
-Remote access: Tailscale (SSH + Wazuh dashboard from any device)
 
+Architecture section · TXT
+## Architecture
+ 
+```
++-----------------------------+        +-----------------------------+
+|   Ubuntu Server 24.04 LTS   |        |      Kali Linux 2026.1       |
+|         (Defender)          |        |         (Attacker)          |
+|                              |        |                              |
+|  Docker + Portainer CE      |<------>|  Nmap recon scans           |
+|  Wazuh Manager / Indexer /  |  NAT   |  Hydra SSH brute-force      |
+|  Dashboard                  |network |  attempts                    |
+|  Wazuh Agent (host)         |        |  Wazuh Agent (host)          |
+|  Suricata (NIDS)            |        |                              |
++-----------------------------+        +-----------------------------+
+        Hypervisor: VMware Workstation Pro
+        Host: Ryzen 7 5800X / RTX 5070 / 32GB DDR4
+        Remote access: Tailscale (SSH + Wazuh dashboard from any device)
+```
+ 
 Host: Ryzen 7 5800X / RTX 5070 / 32GB DDR4
 Remote access: Tailscale (SSH + Wazuh dashboard from any device)
 
