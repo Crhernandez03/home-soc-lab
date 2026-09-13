@@ -101,7 +101,7 @@ the core pieces can be reproduced:
    to catch traffic-level activity (e.g. port scans) that host-based
    monitoring alone misses. See [`docs/suricata-integration.md`](docs/suricata-integration.md).
 
-See [`active-response-debugging.md`](active-response-debugging.md)
+See [`docs/active-response-debugging.md`](docs/active-response-debugging.md)
 for a full write-up of the trickiest issue in the build (Active
 Response silently failing) and how it was diagnosed and fixed.
 
