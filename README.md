@@ -122,7 +122,7 @@ automatically triggers the `host-deny` active response, blocking the
 attacker's IP at the OS level. Confirmed both in the active-response log
 (rule fires → host-deny executes) and in `/etc/hosts.deny` (`ALL:192.168.94.130`).
 
-Full debugging write-up: [`active-response-debugging.md`](active-response-debugging.md)
+Full debugging write-up: [`docs/active-response-debugging.md`](docs/active-response-debugging.md)
 
 [![Active Response Proof](https://github.com/Crhernandez03/home-soc-lab/raw/main/docs/active-response-proof.png)](/Crhernandez03/home-soc-lab/blob/main/docs/active-response-proof.png)
 
