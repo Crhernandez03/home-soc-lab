@@ -164,12 +164,16 @@ Full write-up: [`docs/suricata-integration.md`](docs/suricata-integration.md)
       detection gap where port scans produced zero Wazuh alerts under host-based-only
       monitoring; integrated via `<localfile>` JSON ingestion, verified alerts flowing
       into Wazuh for a repeat nmap scan (see `docs/suricata-integration.md`)
+- [x] Set up a Metasploitable target VM — deliberately vulnerable box, isolated on the
+      NAT-only subnet (no Tailscale), used as the attack target
+- [x] Run privilege escalation and persistence attack scenarios against Metasploitable —
+      daemon → root via SUID nmap exploit, SSH key backdoor for persistence (see
+      `docs/metasploitable-attack-chain.md`)
 
 ### Planned
 
 - [ ] Explore the MITRE ATT&CK dashboard module further
-- [ ] Stand up a Metasploitable target VM
-- [ ] Run additional attack scenarios: privilege escalation, lateral movement, persistence
+- [ ] Run additional attack scenarios: lateral movement scenario
 
 ## Repo contents
 
