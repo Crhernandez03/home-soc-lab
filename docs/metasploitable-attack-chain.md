@@ -1,4 +1,4 @@
-# Metasploitable2 Attack Chain: Initial Access → Privilege Escalation → Persistence
+# Metasploitable Attack Chain: Initial Access → Privilege Escalation → Persistence
 
 This document walks through a full attack chain executed against the Metasploitable2 target VM (192.168.94.131) in this lab, from initial foothold through privilege escalation to persistence. Two separate initial access paths are documented, since they demonstrate different attacker techniques.
 
