@@ -169,11 +169,15 @@ Full write-up: [`docs/suricata-integration.md`](docs/suricata-integration.md)
 - [x] Run privilege escalation and persistence attack scenarios against Metasploitable —
       daemon → root via SUID nmap exploit, SSH key backdoor for persistence (see
       `docs/metasploitable-attack-chain.md`)
+- [x] Test lateral movement from Metasploitable into Ubuntu Server — three techniques
+      attempted (SSH key reuse, internal recon scan, pivoted brute-force); all blocked
+      or contained, brute-force correctly detected and MITRE-tagged as T1021.004 by
+      Wazuh (see `docs/lateral-movement.md`)
 
 ### Planned
 
 - [ ] Explore the MITRE ATT&CK dashboard module further
-- [ ] Run additional attack scenarios: lateral movement scenario
+
 
 ## Repo contents
 
